@@ -1,12 +1,17 @@
 <?php
-class User{
-    public $name;
-    public $surname;
-    public $email;
 
-    public function getFullName()
+class Movie {
+    public $title;
+    public $year;
+    public $regist;
+    public $actor;
+
+    public function __construct($_title, $_year, $_regist, $_actor)
     {
-        return "{$this->name} {$this->surname}";
+       $this->title = $_title;
+       $this->year = $_year; 
+       $this->regist = $_regist; 
+       $this->actor = $_actor;  
     }
 }
 
